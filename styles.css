@@ -1,0 +1,76 @@
+:root {
+    --cor-de-fundo: #ffffff;
+    --branco:   #fff;
+    --laranja: #EB9b00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+}
+
+body {
+     background-color: var(--cor-de-fundo); 
+     font-family: var(--fonte-principal), 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+     font-size :16px:
+     font-weight; 400;
+}
+
+
+h1 { 
+    background-color: rgb(238, 238, 238);
+}
+.cabeçalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .container__imagem{
+        padding: 1em;
+    }
+
+    .cabeçalho__menu-hamburguer {
+        width:  24px;
+        height: 24px;
+        background-image: url("./img/Menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+
+    .lista-menu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 60vw;
+    }
+
+    .lista-menu__titulo{
+        color: var(--laranja);
+     }
+    
+     .lista-menu__link {
+        background: var(--azul-degrade);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: uppercase;
+        }
+
+
+.lista-menu_titulo, .lista-menu_item {
+    padding:1em;
+    background-color:var(--branco);
+}
+.container__botão:checked ~ .lista-menu{
+
+        display: block;
+
+} 
+.container__botao{
+    
+}
